@@ -94,7 +94,7 @@ Star this repository if you find it useful!
 
 ## Acknowledgements <a name="acknowledgements"></a>
 
-We would like to acknowledge the contributions and support of the open-source community in making this project possible.
+We would like to acknowledge the contributions and support of the open-source community in making this project possible.And all the teaching i got from DEV community to create this project
 
 ## License <a name="license"></a>
 
