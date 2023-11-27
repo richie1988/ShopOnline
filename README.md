@@ -1,12 +1,12 @@
-# school-library
+# OnlineStore
 <div align-items="center">
-<img src="./rubyschoollibrary.png" width="auto" height="auto" alt="rubyschooldiagram">
+<img src="" width="auto" height="auto" alt="Onlinestore">
 </div>
 <a name="readme-top"></a>
 
 ## Table of Contents
 
-- [school-library](#school-library)
+- [OnlineStore](#onlinestore)
   - [Table of Contents](#table-of-contents)
   - [About the Project ](#about-the-project-)
   - [Built With ](#built-with-)
@@ -26,17 +26,20 @@
 
 ## About the Project <a name="about-project"></a>
 
-This Ruby project is an educational showcasing advanced list manipulation using the 'school library' module integrated within a class for school library which keeps record of Books  taken ot given from the library.
+This is React redux  project that lets the user to login and shop online. The App provides UI its projects that lets other developer to be familiar with React and Redux implementation.
 ## Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-- Ruby
+- javascript
+- React
+- html
+- css
 
 ### Key Features <a name="key-features"></a>
 
 1. **Advanced List Manipulation:**
-Explore advanced list manipulation with 'school-library' in a Ruby class for enhanced understanding.
+Explore advanced list manipulation with 'school-library' in a React class for enhanced understanding.
 
 2. **Educational Integration:**
 Learn hands-on with 'school-library' in a practical Ruby environment for advanced list manipulation.
@@ -45,20 +48,20 @@ Learn hands-on with 'school-library' in a practical Ruby environment for advance
 
 ### Prerequisites <a name="prerequisites"></a>
 
-- Ruby installed
+- React installed
 
 ### Setup <a name="setup"></a>
 
 1. Clone this repository to your local environment:
 
    ```bash
-   git clone https://github.com/richie1988/school-library
+   git clone https://github.com/richie1988/ShopOnline
    ```
 
 2. Navigate to the project directory:
 
    ```bash
-   cd school-library
+   cd ShopOnline
    ```
 ### Install <a name="install"></a>
 
@@ -66,7 +69,7 @@ Learn hands-on with 'school-library' in a practical Ruby environment for advance
 
 ### Usage <a name="usage"></a>
 
-- Execute the script for an enriching learning experience. This Ruby project demonstrates advanced list manipulation using the 'schoo libray' module within a class and objects.
+- Execute the script for an enriching learning experience. This React project demonstrates advanced list manipulation using the ShopOnline module within a React redux functionality.
 
 ## Authors <a name="authors"></a>
 
@@ -83,7 +86,7 @@ No planned future features at this time. The project is complete and functional,
 
 ## Contributing <a name="contributing"></a>
 
-We welcome contributions to improve this project. If you'd like to contribute, please [open an issue](https://github.com/richie1988/My-own-Enumerable/issues) or [create a pull request](https://github.com/richie1988/My-own-Enumerable/pulls).
+We welcome contributions to improve this project. If you'd like to contribute, please [open an issue](https://github.com/richie1988/ShopOnline) or [create a pull request](https://github.com/richie1988/ShopOnline/pulls).
 
 ## Show your support <a name="support"></a>
 
