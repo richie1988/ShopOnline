@@ -1,11 +1,12 @@
-import React from "react";
-import { useDispatch } from "react-redux";
-import "./cart.css";
-import { cartActions } from "../store/cartSlice";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import './cart.css';
+import { cartActions } from '../store/cartSlice';
 
-
-
-const CartItem = ({ name, quantity, total, price, id }) => {
+const CartItem = ({
+  name, quantity, total, price, id,
+}) => {
   const dispatch = useDispatch();
   const addHandler = () => {
     dispatch(
@@ -13,7 +14,7 @@ const CartItem = ({ name, quantity, total, price, id }) => {
         id,
         name,
         price,
-      })
+      }),
     );
   };
   const removeHandler = () => {
@@ -21,18 +22,36 @@ const CartItem = ({ name, quantity, total, price, id }) => {
   };
   return (
     <div className="cartItem">
-      <h2> {name}</h2>
-      <p>${price} /-</p>
-      <p>x{quantity}</p>
-      <article>Total ${total}</article>
-      <button className="cart-actions" onClick={removeHandler}>
+      <h2>{name}</h2>
+      <p>
+        $
+        {price}
+        /-
+      </p>
+      <p>
+        x
+        {quantity}
+      </p>
+      <article>
+        Total $
+        {total}
+      </article>
+      <button type="button" className="cart-actions" onClick={removeHandler}>
         -
       </button>
-      <button className="cart-actions" onClick={addHandler}>
+      <button type="button" className="cart-actions" onClick={addHandler}>
         +
       </button>
     </div>
   );
+};
+
+CartItem.propTypes = {
+  name: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  price: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
 };
 
 export default CartItem;

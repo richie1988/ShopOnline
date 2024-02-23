@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    background: url("../imageData/background5.jpg");
   }
   .total-price {
     text-align: right;
@@ -18,4 +19,15 @@
   }
   .logout-btn:hover {
     background-color: blueviolet;
+  }
+
+  .orderBtn {
+    width: 100px;
+    margin-bottom: auto;
+    padding: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(21, 26, 42, 0.787);
+    border-radius: 10px;
   }

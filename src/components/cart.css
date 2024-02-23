@@ -1,40 +1,86 @@
+/* cart.css */
 ul {
-    list-style-type: none;
-  }
-  li {
-    padding: 10px;
-  }
-  .cartIcon h3 {
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  .cart-container {
-    border: 1px solid black;
-    border-radius: 10px;
-    margin: 20px;
-    height: 400px;
-    padding: 10px;
-    overflow: scroll;
-    overflow-x: hidden;
-  }
-  
-  .cartItem {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
-    border-radius: 10px;
-    padding: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    background: #2f3c7e;
-    color: #fbeaeb;
-  }
-  .cart-actions {
-    color: white;
-    font-size: 20px;
-    width: 50px;
-    border: none;
-    background: rgb(10, 7, 24);
-  }
+  list-style-type: none;
+}
+
+li {
+  padding: 10px;
+}
+
+.cartIcon {
+  width: 100%;
+}
+
+.cartIcon span {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.cartIcon h3 img {
+  width: 30px;
+}
+
+.cartIcon h3:hover {
+  background: blue;
+  color: white;
+}
+
+.cart-container {
+  width: 550px;
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: grey;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  max-height: 80%;
+  overflow: auto;
+  z-index: 9999;
+  color: white;
+}
+
+.cartItem {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background: #2f3c7e;
+  color: #fbeaeb;
+}
+
+.cart-actions {
+  color: white;
+  font-size: 20px;
+  width: 50px;
+  border: none;
+  background: rgb(10, 7, 24);
+}
+
+/* cart.cssclose button */
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+

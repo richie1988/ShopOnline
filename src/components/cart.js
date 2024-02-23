@@ -1,19 +1,25 @@
-import React from "react";
-import {useSelector, useDispatch} from 'react-redux'
-import "./cart.css";
-import { cartActions } from "../store/cartSlice";
-
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import './cart.css';
+import { cartActions } from '../store/cartSlice';
+import BasketIcon from '../imageData/cartIcon.png';
 
 const Cart = () => {
-    const quantity = useSelector((state)=> state.cart.totalQuantity);
-    const dispatch = useDispatch();
-    const showCart =()=> {
-        dispatch(cartActions.setShowCart());
-    }
+  const dispatch = useDispatch();
+  const quantity = useSelector((state) => state.cart.totalQuantity);
+  const showCart = () => {
+    dispatch(cartActions.setShowCart());
+  };
 
   return (
     <div className="cartIcon">
-      <h3 onClick={showCart}>Cart: {quantity} Items</h3>
+      <button type="button" onClick={showCart}>
+        <img src={BasketIcon} alt="cartIcon" />
+        :
+        {quantity}
+        {' '}
+        Items
+      </button>
     </div>
   );
 };

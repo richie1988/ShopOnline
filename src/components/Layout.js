@@ -1,31 +1,22 @@
-import React from "react";
-import Header from "./Header";
-import Products from "./products";
-import "./Layout.css";
-import CartItems from "./cartItems";
-import {useSelector} from 'react-redux'
-
+/* eslint linebreak-style: ["error", "windows"] */
+import React, { Fragment } from 'react';
+import { useSelector } from 'react-redux';
+import Header from './Header';
+import Products from './products';
+import './Layout.css';
+import CartItems from './cartItems';
 
 const Layout = () => {
-  let total = 0;
-  const itemsList = useSelector( state => state.cart.itemsList)
-  itemsList.forEach(item => {
-    total += item.totalPrice
-    
-  });
-  const showCart = useSelector((state)=> state.cart.showCart);
+  const showCart = useSelector((state) => state.cart.showCart);
+
   return (
-    <React.Fragment>
+    <>
       <div className="layout">
         <Header />
         <Products />
-       {showCart && <CartItems/>}
-        <div className="total-price">
-          <h3>Total: ${total}</h3>
-          <button className="orderBtn">Place Order</button>
-        </div>{" "}
+        {showCart && <CartItems />}
       </div>
-    </React.Fragment>
+    </>
   );
 };
 

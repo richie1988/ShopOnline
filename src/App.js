@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import Auth from "./components/Auth";
-import "./components/Auth.css";
-import Layout from "./components/Layout";
-import Notification from "./components/Notification";
-import { sendCartData } from "./store/cartSlice";
-import { uiActions } from "./store/UI-Slice";
-import { fetchData } from "./store/cart-actions";
+/* eslint linebreak-style: ["error", "windows"] */
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import Auth from './components/Auth';
+import './components/Auth.css';
+import Layout from './components/Layout';
+import Notification from './components/Notification';
+import { fetchData, sendCartData } from './store/cart-actions';
 
 let isFirstRender = true;
 
@@ -16,10 +15,9 @@ function App() {
 
   const cart = useSelector((state) => state.cart);
   const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
-  useEffect(()=> {
-    dispatch(fetchData())
-
-  },[dispatch])
+  useEffect(() => {
+    dispatch(fetchData());
+  }, [dispatch]);
 
   useEffect(() => {
     if (isFirstRender) {
@@ -27,7 +25,7 @@ function App() {
       return;
     }
 
-    if(cart.changed){
+    if (cart.changed) {
       dispatch(sendCartData(cart));
     }
     dispatch(sendCartData(cart));

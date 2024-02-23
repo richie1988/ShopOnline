@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-
 const cartSlice = createSlice({
   name: 'cart',
   initialState: {
@@ -10,20 +9,21 @@ const cartSlice = createSlice({
     changed: false,
   },
   reducers: {
-    replaceData(state, action){
-        state.totalQuantity = action.payload;
-        state.itemsList = action.payload.itemsList
+    replaceData(state, action) {
+      const newState = state;
+      newState.totalQuantity = action.payload;
+      newState.itemsList = action.payload.itemsList;
     },
     addToCart(state, action) {
-        state.changed = true;
+      const newState = state;
+      newState.changed = true;
       const newItem = action.payload;
-      // Check if there is an existing item
-      const existingItem = state.itemsList.find((item) => item.id === newItem.id);
+      const existingItem = newState.itemsList.find((item) => item.id === newItem.id);
       if (existingItem) {
-        existingItem.quantity++;
+        existingItem.quantity += 1;
         existingItem.totalPrice += newItem.price;
       } else {
-        state.itemsList.push({
+        newState.itemsList.push({
           id: newItem.id,
           price: newItem.price,
           quantity: 1,
@@ -31,24 +31,26 @@ const cartSlice = createSlice({
           name: newItem.name,
         });
       }
-      state.totalQuantity++;
+      newState.totalQuantity += 1;
     },
     removeFromCart(state, action) {
-        state.changed = true;
+      const newState = state;
+      newState.changed = true;
       const id = action.payload;
-      const existingItem = state.itemsList.find((item) => item.id === id);
+      const existingItem = newState.itemsList.find((item) => item.id === id);
       if (existingItem) {
         if (existingItem.quantity === 1) {
-          state.itemsList = state.itemsList.filter((item) => item.id !== id);
+          newState.itemsList = newState.itemsList.filter((item) => item.id !== id);
         } else {
-          existingItem.quantity--;
+          existingItem.quantity -= 1;
           existingItem.totalPrice -= existingItem.price;
         }
-        state.totalQuantity--;
+        newState.totalQuantity -= 1;
       }
     },
     setShowCart(state) {
-      state.showCart = !state.showCart;
+      const newState = state;
+      newState.showCart = !newState.showCart;
     },
   },
 });
