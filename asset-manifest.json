@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/ShopOnline/static/css/main.cc0c9000.css",
+    "main.js": "/ShopOnline/static/js/main.aa628b47.js",
+    "static/media/background3.jpg": "/ShopOnline/static/media/background3.732e84b9c0590b2f37a7.jpg",
+    "static/media/background5.jpg": "/ShopOnline/static/media/background5.f90ffc90aa904ad1f17d.jpg",
+    "static/media/background2.jpg": "/ShopOnline/static/media/background2.284b51dbb60f7dd23f88.jpg",
+    "static/media/laptop4.png": "/ShopOnline/static/media/laptop4.546712eeaf8a0ee1fa2c.png",
+    "static/media/laptop12.png": "/ShopOnline/static/media/laptop12.30aed73111be4af117ce.png",
+    "static/media/laptop10.png": "/ShopOnline/static/media/laptop10.b2f45cf430d4dcf35c4a.png",
+    "static/media/laptop2.png": "/ShopOnline/static/media/laptop2.876aa2be3f6b1ea2ff9a.png",
+    "static/media/laptop8.png": "/ShopOnline/static/media/laptop8.3b98d519b6f4c8dcfe22.png",
+    "static/media/laptop3.png": "/ShopOnline/static/media/laptop3.30188077c3ff3847bb02.png",
+    "static/media/laptop9.png": "/ShopOnline/static/media/laptop9.96cac2ebc0c0d2b2ce6d.png",
+    "static/media/laptop11.png": "/ShopOnline/static/media/laptop11.d2592dc458a1fdd48f87.png",
+    "static/media/laptop7.png": "/ShopOnline/static/media/laptop7.3a4a69a9e5711fc511ee.png",
+    "static/media/laptop6.png": "/ShopOnline/static/media/laptop6.ac3ec956ec17751034b2.png",
+    "static/media/laptop5.png": "/ShopOnline/static/media/laptop5.e4a1bdb57139c8724229.png",
+    "static/media/laptop1.png": "/ShopOnline/static/media/laptop1.0c776ad9c4487d191d90.png",
+    "index.html": "/ShopOnline/index.html",
+    "main.cc0c9000.css.map": "/ShopOnline/static/css/main.cc0c9000.css.map",
+    "main.aa628b47.js.map": "/ShopOnline/static/js/main.aa628b47.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc0c9000.css",
+    "static/js/main.aa628b47.js"
+  ]
+}
