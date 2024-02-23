@@ -51,7 +51,7 @@ CartItem.propTypes = {
   quantity: PropTypes.number.isRequired,
   total: PropTypes.number.isRequired,
   price: PropTypes.number.isRequired,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default CartItem;

@@ -18,7 +18,7 @@ const Cart = () => {
         :
         {quantity}
         {' '}
-        Items
+        Checkout
       </button>
     </div>
   );

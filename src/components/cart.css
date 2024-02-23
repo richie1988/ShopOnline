@@ -11,7 +11,7 @@ li {
   width: 100%;
 }
 
-.cartIcon span {
+.cartIcon button {
   width: fit-content;
   display: flex;
   justify-content: space-between;
@@ -23,11 +23,11 @@ li {
   font-size: 30px;
 }
 
-.cartIcon h3 img {
+.cartIcon button img {
   width: 30px;
 }
 
-.cartIcon h3:hover {
+.cartIcon button:hover {
   background: blue;
   color: white;
 }
