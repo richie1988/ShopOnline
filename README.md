@@ -40,7 +40,7 @@ This is React redux  project that lets the user to login and shop online. The Ap
 ### Key Features <a name="key-features"></a>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-- [ Here](https://richardsadmin-dashboard.onrender.com/)
+- [ Here](https://richie1988.github.io/ShopOnline/)
 
 1. **Advanced List Manipulation:**
 Explore advanced list manipulation with 'school-library' in a React class for enhanced understanding.
